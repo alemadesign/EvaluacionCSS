@@ -1,0 +1,14 @@
+html{
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
+}
+header{
+  background-color: #5b7989;
+  height: 100px;
+  -webkit-border-radius: 
+}
+header h1{
+  float: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
