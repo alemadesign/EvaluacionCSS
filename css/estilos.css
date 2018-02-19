@@ -1,50 +1,54 @@
 *
 {
 	margin:0;
-  font-size: 16px;
-  font-family: 'Dancing Script', cursive;
 }
 
 body{
 	background: #02010a;
+	color: black;
+	font-size: 16px;
+  font-family: 'Dancing Script', cursive;
 }
 
 #wrapper
 {
 	width: 900px;
 	margin: 0 auto;
-
 }
 
-header
-{
-  height: 40px;
+header{
+	margin: 0 auto;
+	height: 1em;
 	padding-top: 2%;
 	padding-bottom: 2%;
-	text-align: left;
-	background-color: #5b7989;
+	text-align: center;
+	background-color: grey;
 	color:white;
+}
 
-  width: 100%;
+nav{
+	background-color: blue;
 
 }
+ul{
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 20px;
+}
+
+
 footer{
   clear: both;
-  width: 100%;
-  height: 160px;
+  margin: 0 auto;
+  height: 1em;
   padding-top: 2%;
   padding-bottom: 2%;
-  text-align: left;
+  text-align: center;
   background-color: #5b7989;
   color:white;
 
-
-
-
-
 }
-article
-{
+article{
 	box-sizing: border-box;
 	float:left;
 	height: 100%;
@@ -53,15 +57,12 @@ article
 	height: 400px;
 }
 
-	#columna1
-	{
+	#columna1{
 	background-color: pink;
 	width: 100%;
-  height: 500px;
-
 	}
-	#columna2
-	{
+
+	#columna2{
 	background-color: red;
 	width: 50%;
 	}
@@ -112,5 +113,9 @@ article
 	header
 	{
 	width:100%;
+	}
+	footer
+	{
+	width: 100%;
 	}
 }
