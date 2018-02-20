@@ -26,7 +26,6 @@ header{
   display: -webkit-flex;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
-	text-align: center;
 }
 
 #titulo{
