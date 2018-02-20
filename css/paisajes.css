@@ -4,15 +4,15 @@
 }
 
 body{
-	background: #02010a;
+  background: #02010a;
 	color: white;
-	font-size: 1vw;
+	font-size: 1.2em;
 	font-family: 'Dancing Script';
-  font-size: 14pt;
+
 }
 
 #contenido{
-	width: 900px;
+  width: 900px;
 	margin: 0 auto;
   min-height: 200px;
 }
@@ -23,21 +23,25 @@ header{
   text-shadow: 2px 2px #02010a;
   padding: 25px 0;
   display: flex;
-  display: -webkit-flex;
   flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-	text-align: center;
+
 }
 
 #titulo{
+  margin: 0 auto;
   width: 70%;
-  text-indent: 20px;
+  text-align: center;
   font-size: 1em;
 }
 
 #menuNav{
+  margin: 0 auto;
   width: 30%;
   font-size: 1.2em;
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+
 }
 
 #menuNav a, #menuNav a:hover{
@@ -61,16 +65,13 @@ header{
 
 img{
   width: 100%;
-  -webkit-filter:drop-shadow(2px 2px #02010a);
-  filter: drop-shadow(2px 2px #02010a);
+  box-shadow: 2px 2px #02010a;
 }
 
 #columnaSecundaria{
 	color:black;
   display: flex;
-  display: -webkit-flex;
   flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
   background: #d5c75f;
   min-height: 100px;
   padding: 20px 30px;
@@ -81,10 +82,11 @@ img{
 }
 
 .imgSecundaria{
-  width: 50%;
+  width: 30%;
   text-align: center;
   box-sizing: border-box;
   padding: 0 20px;
+  margin: 10px;
 }
 
 .imgPaisaje{
@@ -107,6 +109,20 @@ img{
   filter: drop-shadow(3px 3px 6px #82c3a6);
   border: 2px solid black;
   transform: translate(20px, -5px);
+}
+
+.img1{
+  -moz-filter: blur(10px);
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.img3{
+  filter: sepia(90%);
+}
+
+#columnaSecundaria .imgSecundaria:nth-child(even){
+  filter: grayscale(100%);
 }
 
 footer{
