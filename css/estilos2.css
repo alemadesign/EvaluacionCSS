@@ -145,6 +145,7 @@ footer .columna{
   #menuCabecera, #tituloCabecera{
     width: 100%;
     text-align: center;
+    float: left;
   }
   .imgSecundaria{
     width: 100%;
@@ -153,4 +154,11 @@ footer .columna{
   footer .columna{
     width: 100%;
     margin: 10px;
+  }
+  header{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+
   }
