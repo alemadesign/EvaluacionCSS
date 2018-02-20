@@ -60,6 +60,8 @@ header{
 
 img{
   width: 100%;
+  -webkit-filter:drop-shadow(2px 2px #02010a);
+  filter: drop-shadow(2px 2px #02010a);
 }
 
 #columnaSecundaria{
