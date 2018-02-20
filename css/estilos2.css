@@ -1,0 +1,152 @@
+*
+{
+	margin:0;
+}
+
+body{
+	background: #02010a;
+	color: white;
+	font-size: 16px;
+	font-family: 'Dancing Script';
+  font-size: 14pt;
+}
+
+#contenido{
+	width: 900px;
+	margin: 0 auto;
+  min-height: 200px;
+}
+
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  padding: 25px 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+#titulo{
+  width: 70%;
+  text-indent: 20px;
+}
+
+#menuNav{
+  width: 30%;
+  font-size: 18pt;
+}
+
+#menuNav a, #menuNav a:hover{
+  color: #fff;
+  padding: 5px 10px;
+}
+
+#menuNav a + a::before {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menuNav .actual{
+  text-decoration: none;
+}
+
+#colCentral{
+  background: #82c3a6;
+  padding: 25px 50px;
+}
+
+img{
+  width: 100%;
+}
+
+#columnaSecundaria{
+	color:black;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background: #d5c75f;
+  min-height: 100px;
+  padding: 20px 30px;
+}
+
+#columnaSecundaria h2{
+  color: black;
+}
+
+.imgSecundaria{
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.imgPaisaje{
+  border: 1px solid black;
+  transition: transform 2s;
+}
+.imgPaisaje:hover{
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  transform: rotate(10deg);
+  border: 2px solid black;
+}
+
+.imgRetrato{
+  border: 1px solid black;
+  transition: transform 2s;
+}
+.imgRetrato:hover{
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  border: 2px solid black;
+  transform: translate(20px, -5px);
+}
+
+footer{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background-color: #C6d5c5;
+  padding: 15px 0;
+  color: black;
+  border-radius: 0 0 10px 10px;
+}
+
+#subrayado{
+  text-decoration: underline;
+}
+
+p{
+  padding: 3px;
+}
+
+footer .columna{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.icon-social{
+  width: 15px;
+}
+
+
+@media screen and (max-width: 1000px){
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+  #menuCabecera, #tituloCabecera{
+    width: 100%;
+    text-align: center;
+  }
+  .imgSecundaria{
+    width: 100%;
+  }
+  footer .columna{
+    width: 100%;
+    margin: 10px;
+  }

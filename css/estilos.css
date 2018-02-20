@@ -73,7 +73,7 @@ footer{
 article{
 	box-sizing: border-box;
 	float:left;
-	height: 100%;
+
 	padding: 2%;
 	text-align: center;
 }
@@ -81,21 +81,27 @@ article{
 #columna1{
 	background-color: #82c3a6;
 	width: 100%;
-	}
-
-#columna1 picture{
-		width: 80%;
-	}
+}
 
 #columna2{
-	background-color: #d5c75f;
-	width: 50%;
-	}
+		background-color: #d5c75f;
+		width: 50%;
+}
 
 #columna3{
-	background-color: #d5c75f ;
+			background-color: #d5c75f ;
+			width: 50%;
+}
+
+#columna1 img{
+		width: 90%;
+}
+
+#columna2 img{
 	width: 50%;
-	}
+}
+
+
 
 @media all and (min-width: 900px){
 
