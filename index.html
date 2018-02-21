@@ -7,33 +7,58 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <title>Comenzando con la fotografía</title>
   </head>
-  <body class="cuerpo">
+  <body>
+    <div id="contenido">
 
-    <header>
-      <h1>Comenzando con la fotografía</h1>
-      <nav>
-        <ul>
-          <li><a class="enlace1" href="#">Inicio</a></li>
-          <li><a class="enlace2" href="#">Paisajes</a></li>
-          <li><a class="enlace3" href="#">Retratos</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header>
+        <div id="titulo">
+          <h1>Comenzando con la fotografía</h1>
+        </div>
+        <div id="menuNav">
+          <a href="index.html" class="actual">Inicio</a>
+          <a href="paisajes.html">Paisajes</a>
+          <a href="retratos.html">Retratos</a>
+        </div>
+      </header>
 
-    <div id="wrapper">
-      <section>
-        <article id="columna1">
-          <img src="img/imgCentral.jpg" alt="Imagen Central">
-        </article>
-        <article id="columna2">Columna 2</article>
-          <img src="img/imagenSec1.jpg" alt="Imagen Central">
-        <article id="columna3">Columna 3</article>
-
+      <section id="colCentral">
+        <img src="img/imgCentral.jpg" alt="">
+      </section>
+      <section id="columnaSecundaria">
+        <div class="imgSecundaria">
+          <img class="imgPaisaje" src="img/paisaje.jpg" alt="Paisaje">
+          <a href="paisajes.html"><h2>Paisajes</h2></a>
+        </div>
+        <div class="imgSecundaria">
+          <img class="imgRetrato" src="img/retrato.jpg" alt="">
+          <a href="retratos.html"><h2>Retratos</h2></a>
+        </div>
       </section>
 
+      <footer>
+        <div class="columna">
+          <h2>Contacto</h2>
+          <p id="subrayado">alemadesign@gmail.com</p>
+          <p>Jorullo 17 CDMX</p>
+          <p>Telefono: 5531494597</p>
+        </div>
+        <div class="columna">
+          <h2>Términos</h2>
+          <p>Politicas y Condiciones</p>
+        </div>
+        <div class="columna">
+          <h2>Redes Sociales</h2>
+          <p>
+            <img src="img/facebook.png" class="icon-social" /> facebook<br />
+            <img src="img/twitter.png" class="icon-social" /> twitter<br />
+            <img src="img/instagram.png" class="icon-social" /> instagram<br />
+          </p>
+        </div>
+        <div class="columna">
+          <h2>Derechos</h2>
+          <p>©Alejandro Gonzalez 2017</p>
+        </div>
+      </footer>
     </div>
-
-    <footer>pie de pagina</footer>
-
   </body>
 </html>

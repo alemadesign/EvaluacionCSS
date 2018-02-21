@@ -1,158 +1,281 @@
-*
-{
+*{
 	margin:0;
-	font-family: 'Dancing Script', cursive;
-	font-size: 16px;
 }
 
 body{
-	background: #02010a;
+  background: #02010a;
+	color: white;
+	font-size: 1.2em;
+	font-family: 'Dancing Script';
+}
+
+#contenido{
+  width: 900px;
+	margin: 0 auto;
+  min-height: 200px;
 }
 
 header{
-	width: 900px;
-	display: flex;
-	flex-flow: row;
-	background-color: #5b7989;
+  background: #5b7989;
 	-webkit-border-radius: 10px 10px 0 0;
-	-o-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
-	border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  padding: 15px 0;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+  display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-name: Animacion;
+	-moz-animation-name: Animacion;
+	-o-animation-name: Animacion;
+	-ms-animation-name: Animacion;
+	animation-name: Animacion;
+}
+@-webkit-keyframes Animacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+@-moz-keyframes Animacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+@-o-keyframes Animacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+@-ms-keyframes Animacion{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
 }
 
-h1{
-	text-shadow: 2px 2px #02010a;
-	padding: 1em;
-	flex-grow: 1.5;
-	font-size: 2em;
-	color:white;
+#titulo{
+	width: 60%;
+  font-size: 1em;
+	text-indent: 20px;
 }
 
-nav{
-	padding: 1em;
+#menuNav{
+  width: 40%;
+  font-size: 1.2em;
+	text-align: center;
 }
 
-ul{
-	display: flex;
-	flex-flow: row;
+#menuNav a, #menuNav a:hover{
+  color: #fff;
+  padding: 5px 10px;
 }
 
-li{
-	list-style-type: none;
-	margin: 1em;
+#menuNav a + a::before {
+  color: #fff;
+  text-decoration: none;
 }
 
-.enlace2, .enlace3{
-	text-decoration: underline;
+#menuNav .actual{
+  text-decoration: none;
 }
 
-a{
-	text-decoration: none;
-	font-size: 1.4em;
-	color: white;
+#colCentral{
+  background: #82c3a6;
+  padding: 25px 50px;
 }
 
-#wrapper{
-	width: 900px;
-	margin: 0 auto;
+img{
+  width: 100%;
+	-webkit-box-shadow: 2px 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
 
+#columnaSecundaria{
+	color:black;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+  display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+  background: #d5c75f;
+  min-height: 100px;
+  padding: 20px;
+}
+
+#columnaSecundaria h2{
+  color: black;
+}
+
+.imgSecundaria2{
+	width: 33%;
+	text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.imgSecundaria{
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+
+.imgPaisaje{
+  border: 1px solid black;
+  transition: transform 2s;
+}
+.imgPaisaje:hover{
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+	-ms-filter:drop-shadow(3px 3px 6px #82c3a6);
+	-moz-filter:drop-shadow(3px 3px 6px #82c3a6);
+	-o-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  transform: rotate(10deg);
+  border: 2px solid black;
+}
+
+.imgRetrato{
+  border: 1px solid black;
+  transition: transform 2s;
+}
+.imgRetrato:hover{
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+	-ms-filter:drop-shadow(3px 3px 6px #82c3a6);
+	-o-filter:drop-shadow(3px 3px 6px #82c3a6);
+	-moz-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  border: 2px solid black;
+  transform: translate(20px, -5px);
+}
+
+.img1{
+  -moz-filter: blur(10px);
+  -webkit-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.img3{
+  -moz-filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+	-moz-filter: sepia(90%);
+	-o-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+.img2, .img4, .img6{
+	-moz-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 footer{
-	clear: both;
-	width: 900px;
-	margin: 0 auto;
-	height: 4em;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	text-align: center;
-	background-color: grey;
-	color:white;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+  display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+  background-color: #C6d5c5;
+  padding: 15px 0;
+  color: black;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
-article{
-	box-sizing: border-box;
-	float:left;
-
-	padding: 2%;
-	text-align: center;
+#subrayado{
+  text-decoration: underline;
 }
 
-#columna1{
-	background-color: #82c3a6;
-	width: 100%;
+p{
+  padding: 3px;
 }
 
-#columna2{
-		background-color: #d5c75f;
-		width: 50%;
+footer .columna{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
-
-#columna3{
-			background-color: #d5c75f ;
-			width: 50%;
-}
-
-#columna1 img{
-		width: 90%;
-}
-
-#columna2 img{
-	width: 50%;
+.icon-social{
+  width: 15px;
 }
 
 
-
-@media all and (min-width: 900px){
-
-	#wrapper{
-		width: 90%;
-		margin: 0 auto;
-	}
-	header{
-		width: 90%;
-		margin: 0 auto;
-	}
-	footer{
-		width: 90%;
-		margin: 0 auto;
-	}
-}
-
-@media all and (max-width: 900px){
-
-	#wrapper
-	{
+@media screen and (max-width: 900px){
+	#contenido{
 		width: 100%;
 		margin: 0 auto;
 	}
-	#columna1
-	{
-	width: 100%;
-	}
-	#columna2
-	{
-	width: 100%;
-	}
-	#columna3
-	{
-	width: 100%;
-	}
-	header
-	{
-	width:100%;
-	display: flex;
-	flex-flow: column;
-	text-align: center;
-	}
-	header h1{
-		padding: 3%;
-	}
-	li{
+  #titulo{
 		width: 100%;
-		margin: 1%;
+		text-align: center;
 	}
-	footer{
-	width: 100%
+	#menuNav{
+    width: 100%;
+
+
 	}
+  .imgSecundaria{
+    width: 100%;
+  }
+	.imgSecundaria2{
+		width: 100%;
+	}
+  footer .columna{
+    width: 100%;
+    margin: 10px;
+  }
 }
